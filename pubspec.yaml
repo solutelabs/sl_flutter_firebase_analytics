@@ -1,0 +1,23 @@
+name: sl_flutter_firebase_analytics
+description: A new Flutter package for collecting and sending analytical information from the app.
+version: 1.0.0
+
+homepage:
+publish_to: "none"
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+
+  firebase_analytics: ^8.1.2
+
+  flutter:
+    sdk: flutter
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+flutter:

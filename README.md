@@ -4,7 +4,7 @@ This package is used for collecting and sending analytical information from the 
 ## Installation
 ##### 1. Add to pubspec.yaml
 ```yaml
-analytics:
+sl_flutter_firebase_analytics:
        git:
          url: https://github.com/solutelabs/sl_flutter_firebase_analytics
          ref: dev

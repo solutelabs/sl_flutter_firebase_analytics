@@ -23,7 +23,7 @@ class Analytics {
   /// Initialises the `Analytics`.
   /// bool [isEnabled] enables or disables "Analytics".
   Future<void> init({required bool isEnabled}) async {
-    _firebaseAnalytics = FirebaseAnalytics();
+    _firebaseAnalytics = FirebaseAnalytics.instance;
     observer = AnalyticsRouteObserver(onNewRoute: _newRouteHandler);
 
     // Enable or disable the analytics on this device.
@@ -70,7 +70,7 @@ class Analytics {
 
   /// Sets the user id to `Firebase`.
   Future<void> _setFirebaseUserId(String userId) =>
-      _firebaseAnalytics.setUserId(userId);
+      _firebaseAnalytics.setUserId();
 
   /// Logs custom events to `Firebase`.
   Future<void> logToFirebase({

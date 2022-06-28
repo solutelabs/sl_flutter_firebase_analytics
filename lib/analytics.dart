@@ -47,7 +47,7 @@ class Analytics {
   /// Captures information about current screen in use.
   void setCurrentScreen({
     required String screenName,
-    Map<String, dynamic> properties = const <String, dynamic>{},
+    dynamic properties = const <String, dynamic>{},
   }) {
     if (ignoredRoutes.contains(screenName)) {
       return;
@@ -74,7 +74,7 @@ class Analytics {
   /// Logs custom events to `Firebase`.
   Future<void> logToFirebase({
     required String name,
-    Map<String, dynamic>? params,
+    dynamic params,
   }) =>
       _firebaseAnalytics.logEvent(
         name: name,

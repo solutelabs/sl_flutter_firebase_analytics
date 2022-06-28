@@ -35,8 +35,7 @@ class Analytics {
     setCurrentScreen(
       screenName: route.settings.name ?? '',
       // ignore: avoid_as
-      properties: route.settings.arguments as Map<String, dynamic>? ??
-          <String, dynamic>{},
+      properties: route.settings.arguments as dynamic,
     );
   }
 
